@@ -1,0 +1,5 @@
+-- Jenkins
+docker run -d -u 1000 --hostname jenkins --name jenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins:/var/jenkins_home --restart=on-failure  jenkins/jenkins:lts-jdk11
+
+-- RabbitMQ
+docker run -d --hostname rabbitmq --name rabbitmq 	-p 15672:15672 	-p 5672:5672 	-v rabbitmqdata:/var/lib/rabbitmq 						rabbitmq:3-management
