@@ -1,5 +1,5 @@
 -- Jenkins
--- utilizar o whereis java dentro do container do jenkins master para descobri o caminho do java
+-- utilizar o whereis java dentro do container do jenkins master para descobri o caminho do java!
 docker run -d -u 1000 --hostname jenkins --name jenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins:/var/jenkins_home --restart=on-failure  jenkins/jenkins:lts-jdk11
 
 -- RabbitMQ
